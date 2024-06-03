@@ -8,9 +8,9 @@
 :root {
     font-size: 62.5%;
     --resultados-bg: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
-    --media-bg: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0,00) 100%)
+    --media-bg: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0,00) 100%);
     --white: #fff;
-    --light-blue: #cac9ff
+    --light-blue: #cac9ff;
 }
 
 body {
@@ -22,6 +22,7 @@ body {
     background: var(--resultados-bg);
     text-align: center;
     color: var(--white);
+    border-radius: 0 0 3.2rem 3.2rem;
 }
 
 .resultados h1 {
@@ -35,4 +36,32 @@ body {
     height: 14rem;
     background: var(--media-bg);
     margin-inline: auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+}
+
+.resultados div strong:nth-of-type(1) {
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 7.2rem;
+}
+
+.resultados div strong:nth-of-type(2) {
+    color: var(--light-blue);
+    
+}
+
+
+.resultados h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.resultados p {
+    max-width: 26rem;
+    margin-inline: auto;
+    color: var(--light-blue);
 }
